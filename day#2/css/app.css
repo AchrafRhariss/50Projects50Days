@@ -22,7 +22,6 @@
 .steps, .controls {
 	display: flex;
 	flex-direction: row;
-	
 	align-items: center;
 	padding: 10px;
 	margin-bottom: 10px;
@@ -95,4 +94,9 @@
 	background-color: var(--grey);
 	cursor: not-allowed;
 	transform: scale(1) !important;
+}
+
+#footer-page {
+	width: 100vw;
+	height: 30vh;
 }
