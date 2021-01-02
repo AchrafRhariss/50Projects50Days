@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: system-ui;
+}
+.container {
+	background: url('https://source.unsplash.com/random/1300x760');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	filter: blur(50px);
+}
+
+.overlay {
+	background: #00000090;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	z-index: 10;
+}
+
+.progress {
+	font-size: 60px;
+    color: #ffffffc9;
+    z-index: 110;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
