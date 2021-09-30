@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: Poppins;
+	font-size: 16px;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 100vh;
+	width: 100%;
+	color: white;
+	font-size: 1.25rem;
+}
+.split {
+	height: 100%;
+	overflow-x: hidden;
+	font-size: 3em;
+	text-align: center;
+	
+}
+.split-1 {
+	float: left;
+	background: linear-gradient(rgba(119,117,228,0.6), rgba(119,117,228,0.6)), url('../images/ps5.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	flex-grow: 1;
+}
+
+
+.split-2 {
+	float: right;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/xbox-series-x.jpg');
+	background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+	flex-grow: 1;
+}
+
+.split:hover {
+	transition: flex 1s ease-in-out; 
+	flex-grow: 5;
+}
+.button {
+	width: 14em;
+	padding: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 3px white solid;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin-top: 2em;
+    display: inline-block;
+    margin: 2em auto;
+}
+h1 {
+	font-size: 1.1em;
+}
+
+.split-1 .button:hover {
+	background-color: #5754EC;
+	border-color: #5754EC;
+}
+
+.split-2 .button:hover {
+	background-color: #1C7A1C;
+	border-color: #1C7A1C;
+}
+
+
+@media (max-width: 800px) {
+	.container {
+		font-size: 0.5rem;
+	}
+	.button {
+		width: 10em;
+		padding: 1em;
+	}
+}
